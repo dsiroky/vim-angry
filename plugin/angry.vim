@@ -82,8 +82,8 @@ onoremap <silent> <script> <Plug>AngryInnerSuffix :call
 " items, inner selection are useful for changing items.
 "
 function! s:List(sep, prefix, outer, times, ...)
-  let lbracket = '[[({]'
-  let rbracket = '[])}]'
+  let lbracket = '[[({<]'
+  let rbracket = '[])}>]'
   let save_mb = getpos("'b")
   let save_me = getpos("'e")
   let save_unnamed = @"
